@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Menu from './Menu/Menu';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Home/Home';
+import About from './About/About';
+import Certificate from './Certificate/Certificate';
+import Design from './components/particles';
+import Links from './components/links';
+import Contact from './Contact/Contact';
+import Skill from './Skill/Skill';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <> 
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={[<Menu/>,<Home/>,<Design/>]}/>
+          <Route path='/about' element={[<Menu/>,<About/>]}/>
+          <Route path='/certificate' element={[<Menu/>,<Certificate/>]}/>
+          <Route path='/skill' element={[<Menu/>,<Skill/>]}/>
+          <Route path='/contact' element={[<Menu/>,<Contact/>,<Links/>]}/>
+          <Route path='/menu' element={<Menu/>}/>
+        </Routes>
+      </BrowserRouter> 
+   </>
   );
 }
 

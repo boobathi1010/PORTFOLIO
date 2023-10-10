@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    padding: .5rem 5rem;
+    background-color: rgb(218, 81, 81);
+}
+.navbar .navbar-brand{
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#navbarSupportedContent a{
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid green;
+}
+#navbarSupportedContent button{
+    width: 5rem;
+}
+ul a{
+    text-decoration: none;
+}
+.btn{
+    text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(211, 136, 136);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name{
+    text-transform: uppercase;
+    color: red;
+    font-style: oblique;
+    font-feature-settings: "blwf";
+    letter-spacing: .2cm;
+    margin-bottom: 5vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.domain{
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    letter-spacing: 5px;
+}
+*{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.about-page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(211, 136, 136);
+   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.skill_page{
+    height: 100vh;
+    background-size: cover;
 }
-
-.App-link {
-  color: #61dafb;
+.contact_page{
+    background-image: url();
+    height: 90vh;
+    background-size: cover;
+    overflow-x: hidden;
+    overscroll-behavior-x: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title_Head3{
+    background-image: linear-gradient(to left,rgb(100, 163, 247),rgb(222, 185, 243));
+    color: rgb(20, 109, 182);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1cm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.title_Head4{
+    background-image: linear-gradient(to left,rgb(121, 231, 178),rgb(149, 94, 181));
+    color: rgb(214, 238, 3);
+    border: 2px solid rgb(149, 94, 181);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2cm;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.title_Head4:hover{
+    color: white !important;
+}
+.contact-page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(211, 136, 136);
+}
+span{
+    color: red;
 }

@@ -1,0 +1,38 @@
+/* Basic styling */
+.title_Head2{
+    background-image: linear-gradient(to left,rgb(219, 230, 70),rgb(148, 52, 204));
+    color: rgb(24, 119, 182);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3cm;
+    font-weight: 700;
+}
+.skills-page{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(211, 136, 136);
+}
+.skill-card {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for the skill card image */
+.skill-card img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover img {
+    transform: scale(1.2);
+}
